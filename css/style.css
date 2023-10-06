@@ -1,0 +1,136 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+    font-family: 'Cinzel', serif;
+}
+
+@keyframes mover {
+    0% {
+        left: 0vw;
+        top: 0.6vh;
+    }
+
+    100% {
+        left: 100vw;
+        top: 0.6vh;
+    }
+}
+
+.top-bar {
+    background: #042940;
+    height: 4vh;
+    width: 100vw;
+
+
+}
+
+.header-main {
+    background-color: #9FC131;
+    height: 10vh;
+    width: 100vw;
+    /* margin-bottom: 5vh; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    /* align-items:self-end;     */
+    justify-content:space-between;
+
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+   padding: 1vw;
+    background-color: #ffffff;
+    border:1.5px solid #1b1d1b1e;
+    transition: transform 0.1s ease-in-out;
+
+}
+
+a img {
+    width: 20vw;
+    height: 45vh;
+
+
+
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.desc h5{
+    font-size: 3.5vw;
+}
+
+
+span {
+    color: azure;
+    position: relative;
+    left: 5vw;
+    top: 0.6vh;
+    padding-right: 6vw;
+    padding-left: 3vw;
+    animation-name: mover;
+    animation-duration: 11s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+}
+.s1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items:center ;
+    gap: 2vw
+
+
+
+}
+main{
+    
+    background-color: #f1f1e6;
+    padding: 5vw;
+}
+a{
+    color:#575754 ;
+    text-decoration: none;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:stretch ;
+
+
+}
+
+/*-------------------------------------*/
+/* BOTON WHATSSAP */
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom:30px;
+    right: 30px;
+    background:  #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+}
+
+/*-----------------------------------------------*/
+ #s-principal{
+    display: flex;
+    gap: 3vw;
+ }
+ ul{
+    list-style: none;
+ }
