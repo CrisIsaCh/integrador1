@@ -4,6 +4,9 @@
 
     font-family: 'Cinzel', serif;
 }
+body{
+    cursor: default;
+}
 
 @keyframes mover {
     0% {
@@ -16,11 +19,14 @@
         top: 0.6vh;
     }
 }
-
+header{
+    overflow: hidden;/* quita el scroll dle header*/
+}
 .top-bar {
     background: #042940;
     height: 4vh;
     width: 100vw;
+    
     
 
 
@@ -41,7 +47,12 @@
     margin-left:2vw;
     
 }
-
+ li:hover{
+    text-decoration:underline;
+    font-weight: bold;
+    
+    /* font-size: 1vw; */
+ }
 .card {
     display: flex;
     flex-direction: column;
@@ -143,5 +154,8 @@ a{
     gap: 3vw;
  }
  ul{
-    list-style: none;
+    list-style: none;/*quita lo * de las lista*/
+    
+
  }
+ 

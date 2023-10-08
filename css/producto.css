@@ -15,7 +15,9 @@
         top: 0.6vh;
     }
 }
-
+header{
+    overflow: hidden;/* quita el scroll dle header*/
+}
 .top-bar {
     background: #042940;
     height: 4vh;

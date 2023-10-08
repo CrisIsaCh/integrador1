@@ -20,6 +20,8 @@ function obtenerCategoria(e) {
         fetch(url+"/category/"+categoria)
         .then(res=>res.json())
         .then(json=>mostrarProductos(json))
+    }else{
+        window.location.reload();
     }
     
 }
@@ -58,3 +60,5 @@ function encontrarId(e) {
 
 }
 link.addEventListener('click', encontrarId);
+
+
