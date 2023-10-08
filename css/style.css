@@ -39,8 +39,8 @@ header{
     /* margin-bottom: 5vh; */
 }
 .header-main img{
-    height: 15vh;
-    width: auto;
+    height: auto;
+    width: 17vw;
     background-color: #9FC131   ; ;
     box-sizing: border-box;
     padding: 1.3vw;

@@ -1,0 +1,238 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    cursor: default;
+}
+
+@keyframes mover {
+    0% {
+        left: 0vw;
+        top: 0.6vh;
+    }
+
+    100% {
+        left: 100vw;
+        top: 0.6vh;
+    }
+}
+
+header {
+    overflow: hidden;
+    /* quita el scroll dle header*/
+}
+
+.top-bar {
+    background: #042940;
+    height: 4vh;
+    width: 100vw;
+
+
+
+
+}
+
+.header-main {
+    background-color: #9FC131;
+    height: 15vh;
+    width: 100vw;
+    /* margin-bottom: 5vh; */
+}
+
+.header-main img {
+    height: 15vh;
+    width: auto;
+    background-color: #9FC131;
+    ;
+    box-sizing: border-box;
+    padding: 1.3vw;
+    margin-left: 2vw;
+
+}
+
+li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+
+    /* font-size: 1vw; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    /* align-items:self-end;     */
+    justify-content: space-between;
+
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    background-color: #ffffff;
+    border: 1.5px solid #1b1d1b1e;
+    transition: transform 0.1s ease-in-out;
+
+}
+
+a img {
+    width: 20vw;
+    height: 45vh;
+
+
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.desc h5 {
+    font-size: 3.5vw;
+}
+
+
+span {
+    color: azure;
+    position: relative;
+    left: 5vw;
+    top: 0.6vh;
+    padding-right: 6vw;
+    padding-left: 3vw;
+    animation-name: mover;
+    animation-duration: 11s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+
+}
+
+.s1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2vw
+}
+
+main {
+
+    background-color: #f1f1e6;
+
+}
+
+a {
+    color: #575754;
+    text-decoration: none;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+
+
+}
+
+/*-------------------------------------*/
+/* BOTON WHATSSAP */
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+}
+
+/*-----------------------------------------------*/
+#s-principal {
+    display: flex;
+    gap: 3vw;
+}
+
+ul {
+    list-style: none;
+    /*quita lo * de las lista*/
+
+
+}
+
+.banner {
+    background-image: url('../imagenes/2023_product-banner_women_fall_01-min.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    margin-bottom: 2vh;
+
+}
+
+.banner2 {
+    background-image: url('../imagenes/accesorios.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 60vh;
+    margin-bottom: 2vh;
+    position: relative;
+
+    animation-name: cambiar;
+    animation-duration: 45s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambiar {
+    0% {
+        background-image: url('../imagenes/accesorios.jpg');
+        left: 0vw;
+        top: 0vh;
+    }
+
+    20% {
+        background-image: url('../imagenes/joya1.jpg');
+        left: 0vw;
+        top: 0vh;
+        filter: grayscale(10%);
+    }
+
+    40% {
+        background-image: url('../imagenes/mujer1.jpg');
+        left: 0vw;
+        top: 0vh;
+    }
+
+    60% {
+        background-image: url('../imagenes/pc1.jpg');
+        left: 0vw;
+        top: 0vh;
+    }
+
+    80% {
+        background-image: url('../imagenes/mujer2.jpg');
+        left: 0vw;
+        top: 0vh;
+    }
+
+    100% {
+        background-image: url('../imagenes/jpyas2.jpg');
+        left: 0vw;
+        top: 0vh;
+        filter: grayscale(10%);
+    }
+}
