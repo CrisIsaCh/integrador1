@@ -57,6 +57,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 20vw;
+    height: auto;
     /* align-items:self-end;     */
     justify-content:space-between;
 
@@ -156,6 +157,45 @@ a{
  ul{
     list-style: none;/*quita lo * de las lista*/
     
-
+/************************************************************************/
  }
- 
+ @media screen and (min-width:767px)and (max-width:1023px) {
+    .s1 {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .card{
+        width: 32vw;
+      
+    }
+    a img {
+        width: 32vw;
+       
+       
+    
+    
+    
+    }
+   
+}
+@media screen and (max-width:767px) {
+    .s1 {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .card{
+        width: 53vw;
+      height: 64 vh;
+    }
+    a img {
+        width: 53vw;
+        height: 50vh;
+       
+       
+    
+    
+    
+    }
+}
