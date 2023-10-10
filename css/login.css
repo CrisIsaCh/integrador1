@@ -1,0 +1,8 @@
+img{
+    position: relative;
+    left: 25vw;
+    width: 50vw;
+    clip-path: polygon(0 100%,100% 100% , 30% 0% ,0 0 );
+    background-size:initial
+    
+}

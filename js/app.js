@@ -9,7 +9,7 @@ fetch(url)
 
 
 
-
+//*************************mostrar Categorias********************************** */
 var categorias = document.getElementById('lista-categorias');
 console.log(categorias);
 
@@ -26,6 +26,9 @@ function obtenerCategoria(e) {
     
 }
 categorias.addEventListener('click', obtenerCategoria)
+
+
+//********************Mostrar Producto**************************/
 const mostrarProductos = (json) => {
     console.log(json);
 
@@ -48,6 +51,9 @@ const mostrarProductos = (json) => {
     }
     document.getElementById('img').innerHTML = card;
 }
+
+
+//////////////////*************************Encontrar Id */
 var link = document.getElementById('img');
 var idencontrado;
 
@@ -60,5 +66,4 @@ function encontrarId(e) {
 
 }
 link.addEventListener('click', encontrarId);
-
 
