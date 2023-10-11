@@ -68,13 +68,44 @@ span {
 
 
 }
+/*************seccion galeria********************/
+.card {
+    display: flex;
+    
+    flex-direction: column;
+    width: 15vw;
+    height: auto;
+    /* align-items:self-end;     */
+    justify-content:space-around;
 
-.s1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 2vw
+
+    
+   padding:1vw;
+    background-color: #ffffff;
+    border:1.5px solid #1b1d1b1e;
+    transition: transform 0.1s ease-in-out;
+
 }
+.card:hover{
+    box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.75);
+
+
+}
+.simg {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin-bottom: 5vh;
+    background-color: #a4343f27;
+    padding: 2vw;
+    
+}
+.img-class{
+    width: 15vw;
+    height: 30vh;
+}
+
+
 
 main {
 
@@ -189,7 +220,7 @@ main {
     gap: 6vw;
     
 }
-.card{
+.card-cat{
     width: 19.5vw;
   
     

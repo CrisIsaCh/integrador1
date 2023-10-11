@@ -3,7 +3,7 @@ let url = "https://fakestoreapi.com/products";
 
 
 
-fetch(url)
+fetch(url+"?sort=desc")
     .then(res => res.json())
     .then(json => mostrarProductos(json));
 

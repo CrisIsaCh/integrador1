@@ -9,7 +9,7 @@ const mostrarProductos = (json) => {
         card += ` 
         <div class="card">
         <a href="producto.html">
-             <img src="${json[i].image}" id="${json[i].id}">
+             <img src="${json[i].image}" id="${json[i].id}" class="img-class">
              </a>
          <div class="desc">
              <h4>${json[i].title}</h4>
