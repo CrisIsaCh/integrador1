@@ -37,3 +37,43 @@ function obtenerCategoria(e,mostrarxcategoria) {
 categorias.addEventListener('click', obtenerCategoria)
 
 
+/********************************************** */
+//********************Mostrar Producto**************************/
+const mostrarProductos = (json) => {
+    console.log(json);
+
+    let card = "";
+
+    for (let i = 0; i < json.length; i++) {
+        // card+=`<img src="${json[i].image}">`
+        card += ` 
+        <div class="card">
+        <a href="descripcionproducto.html">
+             <img src="${json[i].image}" id="${json[i].id}" class="img-class">
+             </a>
+         <div class="desc">
+             <h4>${json[i].title}</h4>
+             <h5>$${json[i].price}</h5>
+         </div>
+        </div> 
+        `
+
+    }
+    document.getElementById('img').innerHTML = card;
+}
+
+/*************************************************** */
+//////////////////*************************Encontrar Id */
+var link = document.getElementById('img');
+var idencontrado;
+
+function encontrarId(e) {
+    console.log(e.target.id);
+    idencontrado = e.target.id;
+    console.log(idencontrado);
+    localStorage.setItem("id", idencontrado)
+
+
+}
+link.addEventListener('click', encontrarId);
+

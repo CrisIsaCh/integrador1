@@ -38,7 +38,7 @@ const mostrarProductos = (json) => {
         // card+=`<img src="${json[i].image}">`
         card += ` 
         <div class="card">
-        <a href="producto.html">
+        <a href="descripcionproducto.html">
              <img src="${json[i].image}" id="${json[i].id}">
              </a>
          <div class="desc">
