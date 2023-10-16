@@ -9,6 +9,7 @@
 
 body {
     cursor: default;
+    background-color: #F1F2F0;
 }
 
 @keyframes mover {
@@ -34,6 +35,7 @@ header {
     width: 100vw;
 
 }
+
 #top-nav {
     color: #0D0D0D;
     position: relative;
@@ -49,6 +51,7 @@ header {
 
 
 }
+
 /**************************************************/
 .header-main {
     background-color: #A43440;
@@ -83,21 +86,101 @@ header {
 
 
 }
+
 .header-main ul li a {
     color: #fff;
     font-size: 1.7vw;
 }
 
-/*******************************footer*****************************************/
-footer{
+/****************************main******************************************************/
+
+main {
+    margin: 0;
+    padding: 0;
+    
+
+    background-image: url('../imagenes/Publicidad-para-tienda-de-ropa\ \(3\)\ \(1\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin-top: -12vh ; */
+
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* font-size: 2vh; */
+    gap: 5vh;
+    padding: 5vh 0;
+}
+
+.main-s {
+    background-color: #5e4e3f98;
+    margin: 5vw 22vw;
+   
+    display: flex;
+    
+    justify-content: center;
+   
+
+    width: auto;
+
+    align-items: end;
+}
+
+
+#div-form {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+#div-form input {
+    border-radius: 9px;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+#div-form textarea {
+    border-radius: 9px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-size:4vh;
+
+}
+
+
+#submit {
+
+    margin: 3vh 4vw;
+    border-radius: 30px;
+    background-color: #A43440;
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+/******************footer**************************************************/
+footer {
     background-color: #000000;
     display: flex;
     justify-content: space-around;
-    
-    
-   
+
+
+
 }
-.f-s2{
+
+.f-s2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -106,79 +189,81 @@ footer{
     height: 46vh;
 
 }
+
 footer img {
     width: 8vw;
 }
-#f-d{
+
+#f-d {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vh;
 }
-#redess{
+
+#redess {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     /* width:50vw;     */
     gap: 3vw;
 }
-#redesS{
-    
+
+#redesS {
+
     color: #ffffff;
     width: 1vw;
-    font-size: 2vw; 
-    
+    font-size: 2vw;
+
 }
-.redes{
- 
-    color: #ffffff;    
+
+.redes {
+
+    color: #ffffff;
 }
+
 #navega-contacta-mediosP-envio,
 #seguinos {
     color: #fff;
 }
-#f-nav{
+
+#f-nav {
     display: flex;
     flex-direction: column;
 }
-#f-s1-nav{
+
+#f-s1-nav {
     color: #fff;
     /* text-decoration: none; */
-    
+
 }
-#f-s1-nav:hover{
-    text-decoration:underline;
+
+#f-s1-nav:hover {
+    text-decoration: underline;
     font-weight: bold;
 }
-#f-s3-i{
+
+#f-s3-i {
     width: 3vw;
     height: 4vh;
-    
+
 }
-.f-s3{
+
+.f-s3 {
     width: 15vw;
     padding-top: 4vh;
     box-sizing: border-box;
 
 }
-.f-s1{
+
+.f-s1 {
     padding-top: 4vh;
     width: 15vw;
 }
-hr{
+
+hr {
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
 
-    
+
 /******************************************************/
-
-
-/* img{
-    position: relative;
-    top: 34vh;
-    left: 25vw;
-    width: 50vw;
-    clip-path: polygon(0 100%,100% 100% , 30% 0% ,0 0 );
-    background-size:initial
-    
-} */
