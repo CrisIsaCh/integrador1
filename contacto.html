@@ -7,6 +7,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Jost:ital,wght@1,200&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/contacto.css">
     <title>Document</title>
 </head>
@@ -37,14 +38,14 @@
     <main>
         <section class="main-s">
 
-            <form action="https://formspree.io/f/xleybkpl" method="post">
+            <form novalidate action="https://formspree.io/f/xleybkpl" method="post" onsubmit="return validarFormulario()" >
 
                 <div id="div-form">
-                    <label for="nombre" class="nombre">Nombre(s):</label>
-                    <input type="text" name="nombre" id="nombre" required>
+                    <label for="nombre" class="nombre">Primer Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" >
                 </div>
                 <div id="div-form">
-                    <label for="apellido" class="apellido">Apellido(s):</label>
+                    <label for="apellido" class="apellido">Apellido:</label>
                     <input type="text" name="apellido" id="apellido">
                 </div>
                 <div id="div-form">
@@ -65,7 +66,7 @@
 
 
         </section>
-
+        <a href="" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
     </main>
     <footer>
         <section class="f-s1">
@@ -114,6 +115,7 @@
 
         </section>
     </footer>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>

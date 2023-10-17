@@ -49,6 +49,12 @@ header {
 
 
 }
+li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+
+    /* font-size: 1vw; */
+}
 /**************************************************/
 .header-main {
     background-color: #A43440;

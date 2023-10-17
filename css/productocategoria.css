@@ -136,20 +136,7 @@ a img {
 }
 
 
-/* span {
-    color: azure;
-    position: relative;
-    left: 5vw;
-    top: 0.6vh;
-    padding-right: 6vw;
-    padding-left: 3vw;
-    animation-name: mover;
-    animation-duration: 11s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    
-    
-} */
+
 .s1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
