@@ -87,6 +87,55 @@ header {
     color: #fff;
     font-size: 1.7vw;
 }
+/****************main****************************************/
+main{
+    background-color: #F1F2F0;
+}
+.m-s1{
+    margin: 0 3vw;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-shadow: -2px -2px 6px rgba(24,24,24,0.93);
+}
+main h1{
+    color: #000000;
+    font-size: 4.5vw;
+    text-align: center;
+}
+.m-s1 span{
+    color: #000000;
+    font-size: 1.7vw;
+    
+    
+ text-align: center;
+}
+.s1{
+    /* background: linear-gradient(to left ,rgba(52,152,219,0.2) ,rgba(231,76,60,0.4));
+    height: 100vh; */
+    display: flex;
+    padding: 5vh 3vw;
+
+    gap: 2vw;
+}
+ .m-s2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 12vh 5vw;
+ }
+ .s2-staaf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+ }
+.s2-staaf img{
+    width:10vw;
+    padding-bottom: 4vh ;
+
+}
+
+
 
 /******************footer**************************************************/
 footer{
