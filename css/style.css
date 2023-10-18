@@ -3,7 +3,7 @@
     padding: 0%;
 
     font-family: 'Cinzel', serif;
-    text-decoration: none;
+    
     list-style: none;
 }
 
@@ -52,8 +52,8 @@ header {
 
 }
 
-li:hover {
-    text-decoration: underline;
+.header-main ul li:hover {
+    text-decoration: none;
     font-weight: bold;
 
     /* font-size: 1vw; */
@@ -99,6 +99,13 @@ li:hover {
 .header-main ul li a {
     color: #fff;
     font-size: 1.7vw;
+}
+.header-main ul li a.active,.header-main ul li a:hover {
+    background: #d6d58e;
+    padding: 0.1vw;
+    border-radius: 2px;
+    color: #000000;
+    font-weight: bold;
 }
 
 /*********************main************************/
@@ -196,6 +203,10 @@ ul {
     /*quita lo * de las lista*/
 
     /************************************************************************/
+} 
+li:hover{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 
