@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Jost:ital,wght@1,200&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/registro.css">
     <title>Amapola Store</title>
 </head>
 
@@ -30,7 +30,7 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a class="active" href="login.html">Iniciar Sesion</a></li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
 
             </ul>
 
@@ -39,19 +39,27 @@
     </header>
     <main>
         <section class="s1">
+
             <div class="titulo">
-                <h1>Iniciar Sesion</h1>
+                <h1>Registro</h1>
             </div>
             <div class="log-s1">
                 <div>
                     <img src="imagenes/pngwing.com.png" alt="">
                 </div>
                 <div class="log-s1-f">
-                    <form >
+                    <form>
+                        <input type="text" name="nombre" id="nombre" placeholder="NOMBRE">
                         <input type="text" name="usuario" id="usuario" placeholder="USUARIO">
-                        <input type="password" name="pass" id="pass" placeholder="PASSWORD">
-                        <input type="button" value="Ingresar" id="submit" onclick="loguearse()">
-                        <p class="">No tienes cuenta? <a href="registro.html">Registrate</a></p>
+                        <input type="password" name="contraseña" id="contraseña" placeholder="PASSWORD">
+                        <select class="form-select" id="sexo" aria-label="Default select example">
+                            <option selected value="">Sexo</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+
+                        <input type="button" value="Registrarse" id="submit" onclick="nuevoUsuario()">
+                        <p class="">Ya tienes cuenta? <a href="login.html">Iniciar Sesion</a></p>
                     </form>
                 </div>
             </div>
@@ -111,7 +119,7 @@
 
         </section>
     </footer>
-    <script src="js/login.js" ></script>
+    <script src="js/registro.js"></script>
 </body>
 
 </html>
