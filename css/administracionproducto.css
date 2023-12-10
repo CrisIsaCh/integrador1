@@ -121,7 +121,7 @@ li:hover {
     background: var(--bg-menu);
     padding: 20px;
     transition: max-width .3s ease;
-    height: 100vh;
+    height: 100%;
 
 }
 
